@@ -3,11 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    PaginaNaoEncontradaComponent,
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule
