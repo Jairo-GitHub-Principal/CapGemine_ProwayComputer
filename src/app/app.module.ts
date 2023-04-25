@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MatSnackBarModule}from "@angular/material/snack-bar";
+import { BarraDePesquisaComponent } from './barra-de-pesquisa/barra-de-pesquisa.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +20,21 @@ import { ProdutosComponent } from './produtos/produtos.component';
     HeaderComponent,
     FooterComponent,
     PaginaNaoEncontradaComponent,
+    BarraDePesquisaComponent,
+   
+    
  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule,
+    FormsModule
+    
+    
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

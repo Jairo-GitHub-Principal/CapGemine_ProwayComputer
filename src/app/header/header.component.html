@@ -5,11 +5,14 @@
 <div class="container-menu">
     <nav class="main-header__menu">
         <ul>
-            <li> <a>Produtos</a></li>
-            <li> <a><i class="fa-sharp fa-solid fa-cart-shopping"></i>Carrinho 
-                        <span class="badge-carrinho"></span>
-                    </a> </li>
-            <li> <a>Contatos</a></li>
+            <li> <a routerLink="/produtos/"><i class="fa-brands fa-product-hunt"></i> Produtos</a></li>
+            
+            <li> <a routerLink="carrinho">  <i class="fa-sharp fa-solid fa-cart-shopping"></i> Carrinho 
+                    <span class="badge-carrinho" >{{carrinhoSevico.obtemCarrinho().length}}</span> 
+                </a>
+            </li>
+            
+            <li> <a routerLink="contato"><i class="fa-solid fa-address-card"></i>Contatos</a></li>
             <li> <a> <i class="fa-brands fa-facebook"></i></a></li>
             <li><a><i class="fa-brands fa-square-instagram"></i></a></li>
             <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -17,9 +20,6 @@
         </ul>
     </nav>
 
-    <form class="search-form">
-        <input class="search-form input">
-        <button class="search-form button"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-    </form>
+   <app-barra-de-pesquisa></app-barra-de-pesquisa>
 </div>
 </header>
